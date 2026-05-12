@@ -1,11 +1,19 @@
 {
   "name": "playwrightproject",
   "version": "1.0.0",
+  "scripts": {
+    "regression": "npx playwright test tests/ui/login.spec.ts",
+    "api": "npx playwright test tests/api/users.spec.ts"
+  },
   "devDependencies": {
     "@playwright/test": "^1.48.0",
-    "@types/node": "^20.0.0"
+    "@types/node": "^20.0.0",
+    "allure": "^3.7.0",
+    "allure-playwright": "^3.7.2"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.1",
+    "@playwright/mcp": "^0.0.75",
     "dotenv": "^16.4.0"
   }
 }

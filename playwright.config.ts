@@ -8,8 +8,9 @@ export default defineConfig({
   },
   retries: 0,
   workers: 1,
-  reporter: [['list'],
-  ['html']
+  reporter: [
+  ['line'],
+  ['allure-playwright']
 ],
   use: {
   baseURL: 'https://marmelab.com/ra-enterprise-demo/',
