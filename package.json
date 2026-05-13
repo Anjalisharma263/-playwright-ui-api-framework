@@ -6,6 +6,8 @@
     "api": "npx playwright test tests/api/users.spec.ts"
   },
   "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.5",
     "@playwright/test": "^1.48.0",
     "@types/node": "^20.0.0",
     "allure": "^3.7.0",

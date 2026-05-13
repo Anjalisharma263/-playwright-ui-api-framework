@@ -7,7 +7,7 @@ export default defineConfig({
     timeout: 5000,
   },
   retries: 0,
-  workers: 1,
+  workers:2,
   reporter: [
   ['line'],
   ['allure-playwright']
@@ -15,7 +15,7 @@ export default defineConfig({
   use: {
   baseURL: 'https://marmelab.com/ra-enterprise-demo/',
   headless: false, // keep visible initially for debugging
-  trace: 'on-first-retry',
+  trace: 'retain-on-first-failure',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     actionTimeout: 0
@@ -25,7 +25,7 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { browserName: 'chromium' },
-    }/*,
+    },
     {
       name: 'firefox',
       use: { browserName: 'firefox' },
@@ -33,6 +33,6 @@ export default defineConfig({
     {
       name: 'webkit',
       use: { browserName: 'webkit' },
-    },*/
+    },
   ],
 });
