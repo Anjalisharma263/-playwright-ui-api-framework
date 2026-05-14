@@ -12,7 +12,7 @@ export class DashboardPage{
     async goto() {
     await this.page.goto('/#/');
   }
-
+//load fuction
 async verifyToLoad(){
     await expect(this.page).toHaveURL('#/');
     await expect(this.dashboardTitle).toBeVisible();
