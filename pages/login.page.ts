@@ -1,5 +1,5 @@
 import {Page,type Locator} from '@playwright/test'
-
+//adding another command to view the pipeline
 export class LoginPage{
  readonly usernameInput:Locator
     readonly passwordInput:Locator
