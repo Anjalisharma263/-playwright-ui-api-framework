@@ -23,7 +23,7 @@ jobs:
         run: npm ci
 
       - name: Azure Login
-        uses: azure/login@v5
+        uses: azure/login
         with:
           creds: ${{ secrets.AZURECREDENTIALS }}
 
